@@ -1,13 +1,18 @@
 import Vue from "vue";
 import Vuex from "vuex";
 
-// import moduleUsers from "./modules/users";
+import moduleLogin from "./modules/login";
+import moduleUsers from "./modules/users";
 
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
   modules: {
-    // users: moduleUsers,
+    login: moduleLogin,
+    users: moduleUsers
+  },
+  state: {
+    applicationName: "Default Application"
   }
 });
 
