@@ -8,4 +8,4 @@ const router = new VueRouter({
   //   routes: routes
 });
 
-export default rooter;
+export default router;
