@@ -8,19 +8,9 @@
         </h1>
       </v-col>
 
-      <!-- <v-col class="mb-5" cols="12">
-        <h3 class="headline font-weight-bold mb-3">Medium Articles</h3>
-
-        <v-row justify="center">
-          <a
-            v-for="(article, i) in articles"
-            :key="i"
-            :href="article.href"
-            class="subheading mx-3"
-            target="_blank"
-          >{{ article.text }}</a>
-        </v-row>
-      </v-col>-->
+      <v-col cols="12">
+        <p>These are the principal technologies (plugins, frameworks, librairies) used for the development of this application.</p>
+      </v-col>
 
       <v-col class="mb-5" cols="12">
         <h3 class="headline font-weight-bold mb-3">Frontend Technologies</h3>
@@ -55,7 +45,7 @@
 
         <v-row justify="center">
           <a
-            v-for="(tech, i) in backendTechnologies"
+            v-for="(tech, i) in otherTechnologies"
             :key="i"
             :href="tech.href"
             class="subheading mx-3"
@@ -80,11 +70,10 @@ export default {
       backendTechnologies: [
         { href: "https://expressjs.com/", text: "Express" },
         { href: "https://mongoosejs.com/", text: "Mongoose" },
+        { href: "http://www.passportjs.org/", text: "Passport.js" },
         { href: "http://nodemailer.com/app/", text: "Nodemailer" }
       ],
-      developmentTechnologies: [
-        { href: "https://mailtrap.io/", text: "Mailtrap" }
-      ]
+      otherTechnologies: [{ href: "https://mailtrap.io/", text: "Mailtrap" }]
     };
   }
 };
